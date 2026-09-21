@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pennyswise | Goals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark">P</div>
+          <span class="brand-name">Pennyswise</span>
+        </div>
+
+        <nav class="side-nav" aria-label="Sidebar navigation">
+          <a class="nav-item" href="index.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5V5.5A1.5 1.5 0 0 1 5.5 4H9v7.5H4Zm0 0h7.5V20H5.5A1.5 1.5 0 0 1 4 18.5v-7Zm10.5 0V4H18.5A1.5 1.5 0 0 1 20 5.5v6h-5.5Zm0 0H20v7.5a1.5 1.5 0 0 1-1.5 1.5H14.5v-9Z"/></svg></span>
+            <span>Overview</span>
+          </a>
+          <a class="nav-item" href="transactions.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h10A2.5 2.5 0 0 1 19.5 6v12A2.5 2.5 0 0 1 17 20.5H7A2.5 2.5 0 0 1 4.5 18V6A2.5 2.5 0 0 1 7 3.5Zm0 4.5h10M8 12h8M8 16h5"/></svg></span>
+            <span>Transactions</span>
+          </a>
+          <a class="nav-item" href="budgets.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 19.5h13M7.5 19.5V8.5m4.5 11V5.5m4.5 14v-8"/></svg></span>
+            <span>Budgets</span>
+          </a>
+          <a class="nav-item active" href="goals.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 0 0 0-15Zm0 1.75a5.75 5.75 0 1 1 0 11.5a5.75 5.75 0 0 1 0-11.5Zm0 3.5v4.25m0 0l2.25 2.25m-2.25-2.25l-2.25 2.25"/></svg></span>
+            <span>Goals</span>
+          </a>
+        </nav>
+
+        <div class="plan-box">
+          <div class="plan-label">STUDENT PLAN</div>
+          <div class="plan-text">You're building great money habits.</div>
+          <div class="plan-progress"><span></span></div>
+        </div>
+
+        <div class="profile-box">
+          <div class="avatar">M</div>
+          <div class="profile-meta">
+            <strong>Maya Chen</strong>
+            <span>2nd year • Design</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel inner-page">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Goals</p>
+            <h1>Savings goals</h1>
+          </div>
+          <button class="primary-button" type="button"><span class="button-icon plus-icon">+</span><span>New goal</span></button>
+        </header>
+
+        <section class="goal-grid">
+          <article class="content-card goal-card">
+            <div class="goal-top">
+              <span class="goal-tag green">Travel</span>
+              <strong>€1,200</strong>
+            </div>
+            <h3>Berlin trip</h3>
+            <p>€740 saved</p>
+            <div class="progress-track"><span style="width: 62%"></span></div>
+            <div class="goal-meta"><span>62% complete</span><span>€460 left</span></div>
+          </article>
+
+          <article class="content-card goal-card">
+            <div class="goal-top">
+              <span class="goal-tag blue">Study</span>
+              <strong>€2,400</strong>
+            </div>
+            <h3>Course materials</h3>
+            <p>€1,520 saved</p>
+            <div class="progress-track"><span style="width: 63%"></span></div>
+            <div class="goal-meta"><span>63% complete</span><span>€880 left</span></div>
+          </article>
+
+          <article class="content-card goal-card">
+            <div class="goal-top">
+              <span class="goal-tag orange">Emergency</span>
+              <strong>€900</strong>
+            </div>
+            <h3>Buffer fund</h3>
+            <p>€540 saved</p>
+            <div class="progress-track"><span style="width: 60%"></span></div>
+            <div class="goal-meta"><span>60% complete</span><span>€360 left</span></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
