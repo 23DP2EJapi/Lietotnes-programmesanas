@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pennyswise | Budgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark">P</div>
+          <span class="brand-name">Pennyswise</span>
+        </div>
+
+        <nav class="side-nav" aria-label="Sidebar navigation">
+          <a class="nav-item" href="index.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5V5.5A1.5 1.5 0 0 1 5.5 4H9v7.5H4Zm0 0h7.5V20H5.5A1.5 1.5 0 0 1 4 18.5v-7Zm10.5 0V4H18.5A1.5 1.5 0 0 1 20 5.5v6h-5.5Zm0 0H20v7.5a1.5 1.5 0 0 1-1.5 1.5H14.5v-9Z"/></svg></span>
+            <span>Overview</span>
+          </a>
+          <a class="nav-item" href="transactions.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h10A2.5 2.5 0 0 1 19.5 6v12A2.5 2.5 0 0 1 17 20.5H7A2.5 2.5 0 0 1 4.5 18V6A2.5 2.5 0 0 1 7 3.5Zm0 4.5h10M8 12h8M8 16h5"/></svg></span>
+            <span>Transactions</span>
+          </a>
+          <a class="nav-item active" href="budgets.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 19.5h13M7.5 19.5V8.5m4.5 11V5.5m4.5 14v-8"/></svg></span>
+            <span>Budgets</span>
+          </a>
+          <a class="nav-item" href="goals.html">
+            <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5a7.5 7.5 0 1 0 0 15a7.5 7.5 0 0 0 0-15Zm0 1.75a5.75 5.75 0 1 1 0 11.5a5.75 5.75 0 0 1 0-11.5Zm0 3.5v4.25m0 0l2.25 2.25m-2.25-2.25l-2.25 2.25"/></svg></span>
+            <span>Goals</span>
+          </a>
+        </nav>
+
+        <div class="plan-box">
+          <div class="plan-label">STUDENT PLAN</div>
+          <div class="plan-text">You're building great money habits.</div>
+          <div class="plan-progress"><span></span></div>
+        </div>
+
+        <div class="profile-box">
+          <div class="avatar">M</div>
+          <div class="profile-meta">
+            <strong>Maya Chen</strong>
+            <span>2nd year • Design</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel inner-page">
+        <header class="page-header">
+          <div>
+            <p class="eyebrow">Budgets</p>
+            <h1>September budget</h1>
+          </div>
+          <button class="primary-button" type="button"><span class="button-icon plus-icon">+</span><span>New budget</span></button>
+        </header>
+
+        <section class="budget-grid">
+          <article class="content-card budget-hero">
+            <div class="donut-wrap">
+              <div class="donut">
+                <div class="donut-inner">
+                  <strong>€635</strong>
+                  <span>of €1,000 used</span>
+                </div>
+              </div>
+            </div>
+            <div class="budget-copy">
+              <h2>Current spend</h2>
+              <p>You are on track to stay within your monthly budget.</p>
+              <span class="positive">64% spent</span>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <div class="list-header">
+              <h2>Category budgets</h2>
+              <button class="link-button" type="button">View all</button>
+            </div>
+
+            <div class="budget-list vertical">
+              <div class="budget-item line-item">
+                <div class="item-label"><span class="dot food"></span><span>Food &amp; coffee</span></div>
+                <span class="amount">€182 / €250</span>
+              </div>
+              <div class="progress-track"><span style="width: 73%"></span></div>
+
+              <div class="budget-item line-item">
+                <div class="item-label"><span class="dot transport"></span><span>Transport</span></div>
+                <span class="amount">€74 / €120</span>
+              </div>
+              <div class="progress-track"><span style="width: 62%"></span></div>
+
+              <div class="budget-item line-item">
+                <div class="item-label"><span class="dot social"></span><span>Social &amp; fun</span></div>
+                <span class="amount">€157 / €240</span>
+              </div>
+              <div class="progress-track"><span style="width: 65%"></span></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
